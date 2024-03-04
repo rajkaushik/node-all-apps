@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Friends</title>
+    <%- include('../partials/head'); %>
+</head>
+<body>
+    <div class="container">
+        <h1>Friends List</h1>
+        <div class="row">
+            <% if (users.length > 0) { %>
+                <% users.forEach(function(user){ %>
+                    <%- include('../partials/users', {user: user}); %>
+                <% }); %> 
+                <%} else { %>
+                <div class="p-3 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-3">
+                    <p>No Data found</p>
+                </div>
+            <% } %>       
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login page</title>
+    <%- include('../partials/head'); %>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div class="row">
+                <h1>Login Form</h1>
+            </div>
+            <form method="post" action="/login">
+                <div class="row">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Enter Password">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3">
+                        <button type="submit" class="bnt btn-primary">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
